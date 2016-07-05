@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-lazy-init="true">
+
+
+
+    <bean class="factory.details.Head" id="head">
+        <constructor-arg value="Panama" type="java.lang.String"/>
+        <constructor-arg value="1" type="int"/>
+    </bean>
+
+    <bean class="factory.details.Hand" id="hand">
+        <constructor-arg value="Panama" type="java.lang.String"/>
+        <constructor-arg value="3" type="int"/>
+    </bean>
+
+    <bean class="factory.details.Leg" id="leg">
+        <constructor-arg value="Panama" type="java.lang.String"/>
+        <constructor-arg value="2" type="int"/>
+    </bean>
+
+
+
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="init"
+       default-lazy-init="true">
+
+    <bean id="robotPool" class="factory.pool.RobotPool">
+        <constructor-arg>
+            <map key-type="java.lang.Integer" value-type="factory.robot.Robot">
+                <entry key="2007" value-ref="robot"/>
+                <entry key="2008" value-ref="robot"/>
+                <entry key="2009" value-ref="robot"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+</beans>
